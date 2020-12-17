@@ -13,7 +13,7 @@ body {
   background-image: url("https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/277/277432/raw-beetroot-on-a-wooden-surface.jpg?w=1155&h=1444");  
   background-size: cover;
   background-color:#306998;
-  transition-duration:0.5s
+  transition-duration:0.5s;
 }
 
 div {
@@ -21,6 +21,7 @@ div {
   color:white;
   margin:0;
   padding:0;  
+  transition-duration:0.5s;
 }
   
 div#lol {
@@ -28,7 +29,7 @@ div#lol {
   left:0;
   top:10%;
   width:100%;
-  height:30%;
+  height:60%;
   background-color:#781231;
   filter: drop-shadow(0 0 40px #000);
 }
@@ -109,18 +110,21 @@ div#but3 {
 
 <script>
   function dobblethon(){
-    document.body.style.background = 'none';
-    document.getElementById('lol').style.backgroundColor = '#FFD43B';
-    document.getElementById('s1').style.color = '#EFC42B';
+    document.getElementById('lol').style.backgroundColor = '#306998';
+    document.getElementById('but1').style.backgroundColor = '#FFD43B';
+    document.getElementById('but2').style.backgroundColor = '#FFD43B';
+    document.getElementById('but3').style.backgroundColor = '#FFD43B';
+    document.getElementById('s1').style.color = '#2B6594';
     document.getElementById('s2').style.top = '20%';
+    document.getElementById('s2').innerHTML = 'lol';
   }
 </script>
 
 <body>
   <!--div id="lol" onclick="body.style.backgroundImage = 'url(\'https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/277/277432/raw-beetroot-on-a-wooden-surface.jpg?w=1155&h=1444\')'"-->
   <div id="lol" onclick="dobblethon();">
-    <span id="s1">Pictureofabeetroot.com</span>
-    <span id="s2">Actually it's not, actually it's janjawien.github.io with a beetroot<br>Click for info about our project</span>
+    <span id="s1">janjawien.github.io</span>
+    <span id="s2">Kliknij aby dowiedziec się więcej o projekcie</span>
     <span id="s3">Jan Jawień, Narzędzia Informatyczne @ IiSI AGH pozdrawiam </span>
   </div>
   <div id="but1" onclick="body.style.backgroundImage = 'url(\'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/roasted-beets-horizontal-1533160874.jpg\')'">Chop it up</div>
