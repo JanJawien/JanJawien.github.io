@@ -12,6 +12,8 @@ body {
   padding:0;
   background-image: url("https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/277/277432/raw-beetroot-on-a-wooden-surface.jpg?w=1155&h=1444");  
   background-size: cover;
+  background-color:#306998;
+  transition-duration:0.5s
 }
 
 div {
@@ -105,11 +107,20 @@ div#but3 {
   
 </style>
 
+<script>
+  function dobblethon(){
+    body.style.backgroundImage = '';
+    document.getElementById('lol').style.backgroundColor = '#FFD43B';
+    document.getElementById('s1').style.color = '#EFC42B';
+    document.getElementById('s2').style.top = '20%';
+  }
+</script>
 
 <body>
-  <div id="lol" onclick="body.style.backgroundImage = 'url(\'https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/277/277432/raw-beetroot-on-a-wooden-surface.jpg?w=1155&h=1444\')'">
+  <!--div id="lol" onclick="body.style.backgroundImage = 'url(\'https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/277/277432/raw-beetroot-on-a-wooden-surface.jpg?w=1155&h=1444\')'"-->
+  <div id="lol" onclick="dobblethon();">
     <span id="s1">Pictureofabeetroot.com</span>
-    <span id="s2">Actually it's not, actually it's janjawien.github.io with a beetroot</span>
+    <span id="s2">Actually it's not, actually it's janjawien.github.io with a beetroot<br>Click for info about our project</span>
     <span id="s3">Jan Jawień, Narzędzia Informatyczne @ IiSI AGH pozdrawiam </span>
   </div>
   <div id="but1" onclick="body.style.backgroundImage = 'url(\'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/roasted-beets-horizontal-1533160874.jpg\')'">Chop it up</div>
